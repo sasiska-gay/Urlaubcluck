@@ -1,0 +1,61 @@
+@mixin authButton($border) {
+    background: transparent;
+    color: $whiteText;
+    font-size: 14px;
+    font-weight: 700;
+    font-family:'Montserrat', serif;
+    padding: 10px 15px;
+    border: $border;
+}
+
+
+$whiteText : #fff;
+
+
+
+// global styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+// header
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    .logo {
+        display: none;
+    }
+    .login {
+        @include authButton(none);
+    }
+    .signup {
+        @include authButton(2px solid #fff);
+        border-radius: 25px;
+    }
+}// promo
+
+.promo {
+    height: 100vh;
+    background: url(../img/bcimage.jpg) center / cover no-repeat;
+}
+
+.promo::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.5);
+}

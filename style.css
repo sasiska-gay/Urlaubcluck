@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .logo {
+  display: none;
+}
+
+header .login {
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Montserrat', serif;
+  padding: 10px 15px;
+  border: none;
+}
+
+header .signup {
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Montserrat', serif;
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+}
+
+.promo {
+  height: 100vh;
+  background: url(../img/bcimage.jpg) center/cover no-repeat;
+}
+/*# sourceMappingURL=style.css.map */
